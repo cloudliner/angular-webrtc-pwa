@@ -131,6 +131,20 @@
               }
             }
           }
+        },
+        "app-shell": {
+          "builder": "@angular-devkit/build-angular:app-shell",
+          "options": {
+            "browserTarget": "angular-webrtc-pwa:build",
+            "serverTarget": "angular-webrtc-pwa:server",
+            "route": "shell"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-webrtc-pwa:build:production",
+              "serverTarget": "angular-webrtc-pwa:server:production"
+            }
+          }
         }
       }
     },
