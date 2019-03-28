@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "clean": "rm -r ./public/",
+    "build": "npm-run-all clean lint build:*",
+    "build:ng": "ng build",
+    "build:cp": "cp -r ./dist/angular-webrtc-pwa/ ./public/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
